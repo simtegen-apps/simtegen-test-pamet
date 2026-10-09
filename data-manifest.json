@@ -28,43 +28,95 @@
       "entita": "uzivatele",
       "ucel": "účet zákazníka a přihlášení",
       "pole": "e-mailová adresa, čas založení účtu",
-      "retence": "do smazání účtu zákazníkem"
+      "retence": "do smazání účtu zákazníkem",
+      "play_typy": [
+        "email"
+      ],
+      "play_ucely": [
+        "ucet"
+      ]
     },
     {
       "entita": "prihlasovaci_odkazy",
       "ucel": "jednorázové přihlášení e-mailovým odkazem",
       "pole": "otisk tokenu, e-mailová adresa, expirace",
-      "retence": "24 hodin"
+      "retence": "24 hodin",
+      "play_typy": [
+        "email"
+      ],
+      "play_ucely": [
+        "ucet",
+        "bezpecnost"
+      ]
     },
     {
       "entita": "relace",
       "ucel": "udržení přihlášení",
       "pole": "otisk tokenu, odkaz na účet, expirace",
-      "retence": "30 dní od přihlášení"
+      "retence": "30 dní od přihlášení",
+      "play_typy": [
+        "id_uzivatele"
+      ],
+      "play_ucely": [
+        "ucet",
+        "bezpecnost"
+      ]
     },
     {
       "entita": "predplatne",
       "ucel": "evidence zaplaceného období předplatného",
       "pole": "odkaz na účet, datum konce předplatného, poznámka k platbě (např. číslo dokladu)",
-      "retence": "do smazání účtu zákazníkem; účetní doklady vede provozovatel mimo aplikaci po zákonnou dobu"
+      "retence": "do smazání účtu zákazníkem; účetní doklady vede provozovatel mimo aplikaci po zákonnou dobu",
+      "play_typy": [
+        "historie_nakupu"
+      ],
+      "play_ucely": [
+        "funkce",
+        "ucet"
+      ]
     },
     {
       "entita": "hlaseni",
       "ucel": "hlášení a dotazy zákazníka k aplikaci a naše odpovědi",
       "pole": "text hlášení, stav vyřízení, odpověď, číslo záznamu v systému podpory, čas",
-      "retence": "do smazání účtu zákazníkem"
+      "retence": "do smazání účtu zákazníkem",
+      "play_typy": [
+        "zpravy"
+      ],
+      "play_ucely": [
+        "funkce",
+        "komunikace"
+      ],
+      "play_volitelne": true
     },
     {
       "entita": "platby",
       "ucel": "evidence zaplacených období předplatného (historie plateb)",
       "pole": "odkaz na účet, počet zaplacených měsíců, poznámka k platbě, čas zápisu",
-      "retence": "do smazání účtu zákazníkem; účetní doklady vede provozovatel mimo aplikaci po zákonnou dobu"
+      "retence": "do smazání účtu zákazníkem; účetní doklady vede provozovatel mimo aplikaci po zákonnou dobu",
+      "play_typy": [
+        "historie_nakupu"
+      ],
+      "play_ucely": [
+        "funkce",
+        "ucet"
+      ]
     },
     {
       "entita": "objednavky",
       "ucel": "objednávka předplatného a doklad o souhlasu se zahájením služby",
       "pole": "odkaz na účet, délka a varianta předplatného, cena, fakturační údaje, zda jde o spotřebitele, souhlas se zahájením a jeho čas, stav",
-      "retence": "do smazání účtu zákazníkem; účetní doklady vede provozovatel mimo aplikaci po zákonnou dobu"
+      "retence": "do smazání účtu zákazníkem; účetní doklady vede provozovatel mimo aplikaci po zákonnou dobu",
+      "play_typy": [
+        "jmeno",
+        "adresa",
+        "historie_nakupu"
+      ],
+      "play_ucely": [
+        "funkce",
+        "ucet"
+      ],
+      "play_volitelne": true
     }
   ],
   "agregaty": [
@@ -105,6 +157,9 @@
     "kratky_nazev": "Test",
     "popis": "Testovací aplikace SimteGenu pro ověření sestavení.",
     "otisky": [],
-    "pismeno": "T"
+    "pismeno": "T",
+    "dlouhy_popis": "Testovací aplikace SimteGenu. Slouží jen k ověření, že se z webu produktu dá sestavit aplikace pro Android a připravit její záznam v Google Play. Zákazníkům se nenabízí.",
+    "kategorie": "TOOLS",
+    "kontakt_email": "podpora@example.cz"
   }
 }
